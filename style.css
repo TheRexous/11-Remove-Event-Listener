@@ -1,0 +1,25 @@
+h3 {
+    color: white;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: red;
+}
+
+.white-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: white;
+}
