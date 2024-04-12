@@ -1,17 +1,5 @@
 const circle = document.querySelector('.circle')
 let count = 0
-
-function toggleColor() {
-    circle.classList.toggle('white-circle')
-    count++
-    console.log(count)
-    if (count > 9) {
-        circle.removeEventListener('click', toggleColor)
-    }
-}
-
-circle.addEventListener('click', toggleColor)
-
 let height = 0
 
 function moveCircle() {
@@ -23,3 +11,14 @@ function moveCircle() {
 }
 
 circle.addEventListener('click', moveCircle)
+
+function toggleColor() {
+    circle.classList.toggle('white-circle')
+    count++
+    console.log(count)
+    if (count > 9) {
+        circle.removeEventListener('click', toggleColor)
+    }
+}
+
+circle.addEventListener('click', toggleColor)
